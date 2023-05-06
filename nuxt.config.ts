@@ -13,6 +13,8 @@ export default defineNuxtConfig({
         transpile: ['vuetify'],
     },
     runtimeConfig: {
-        apiURL : process.env.BACKEND_API_URL,
+        public: {
+            apiURL : process.env.BACKEND_API_URL,
+        }
     }
 })
